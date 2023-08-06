@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100;
+        min-height: 100vh;
+
+    }
+
+    .container {
+        background: aquamarine;
+        min-width: 30vw;
+        min-height: 50vh;
+        padding: 30px;
+        border-radius: 33px;
+        box-sizing: border-box;
+        box-shadow: ghostwhite;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+
+    .input {
+        width: 100%;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .inputdiv {
+        margin: 10px;
+    }
+
+    .submit {
+        margin: 13px;
+    }
+
+    .submit button {
+        width: 100%;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+        background-color: #007bff;
+        color: #fff;
+    }
+
+    .info {
+        margin: 2px;
+        padding: 2px;
+    }
+
+    .submit button:hover {
+        background-color: rgb(82, 82, 255);
+    }
+
+    .header {
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        margin: 5px 0px 5px;
+    }
+
+    .header img {
+        margin: 0px 10px 0px 0px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <form method="post" action="/home">
+            <div class="header">
+                <img height="40" src="/icon.png" alt="">
+                <h1>Massanger</h1>
+            </div>
+            <div class="info">
+                <div class="inputdiv">
+                    <input class="input" type="text" name="name" placeholder="Enter your name">
+                </div>
+                <div class="inputdiv">
+                    <input class="input" type="password" name="password" id="" placeholder="Password">
+                </div>
+            </div>
+            <div class="submit">
+                <button>Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
